@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     public void CompleteLevel() {
         Debug.Log("Level WON");
         completeLevelUI.SetActive(true);
+        Invoke(nameof(Restart), restartDelay); // should be next lvl
+
     }
 
     public void EndGame() {
@@ -23,5 +25,7 @@ public class GameManager : MonoBehaviour
     }
     void Restart() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        completeLevelUI.SetActive(false); // animation fix
+
     }
 }

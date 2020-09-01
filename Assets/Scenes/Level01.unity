@@ -738,7 +738,7 @@ PrefabInstance:
     - target: {fileID: 4851409541276253463, guid: b1ccbd09b222a43a9af30fee9b6125a1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.2
+      value: 2.8
       objectReference: {fileID: 0}
     - target: {fileID: 4851409541276253463, guid: b1ccbd09b222a43a9af30fee9b6125a1,
         type: 3}
@@ -748,7 +748,7 @@ PrefabInstance:
     - target: {fileID: 4851409541276253463, guid: b1ccbd09b222a43a9af30fee9b6125a1,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 129.3
+      value: 131.3
       objectReference: {fileID: 0}
     - target: {fileID: 4851409541276253463, guid: b1ccbd09b222a43a9af30fee9b6125a1,
         type: 3}
@@ -1238,7 +1238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e069f9e55c68439b88c7ba57adaf25f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  restartDelay: 1
+  restartDelay: 0.9
   completeLevelUI: {fileID: 1159533655}
 --- !u!4 &668515200
 Transform:
@@ -1751,6 +1751,7 @@ GameObject:
   - component: {fileID: 1159533658}
   - component: {fileID: 1159533657}
   - component: {fileID: 1159533656}
+  - component: {fileID: 1159533659}
   m_Layer: 5
   m_Name: LevelComplete
   m_TagString: Untagged
@@ -1816,6 +1817,25 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &1159533659
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159533655}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 20bf5cc27fd264abba6640b78dab4e6f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1270085089
 PrefabInstance:
   m_ObjectHideFlags: 0
