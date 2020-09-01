@@ -7,11 +7,6 @@ public class PlayerMovement : MonoBehaviour {
     public float forwardForce  = 2000f;
     public float sidewaysForce = 500f;
 
-    void Start() {
-        Debug.Log("Hello World");
-
-    }
-
     // Update is called once per frame
     void FixedUpdate() {
         // Add forward forse 
