@@ -10,6 +10,7 @@ public class PlayerCollision : MonoBehaviour
         {
             Debug.Log("We hit an obsticle");
             movement.enabled = false;
+            FindObjectOfType<GameManager>().EndGame();
         }
     }
 }
